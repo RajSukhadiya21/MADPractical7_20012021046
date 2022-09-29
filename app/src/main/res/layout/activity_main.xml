@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+   <androidx.core.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+   <com.google.android.material.card.MaterialCardView
+       android:id="@+id/card1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="8dp"
+       android:layout_marginTop="64dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:cardElevation="150dp">
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="30dp"
+          android:layout_marginTop="5dp"
+         android:src="@drawable/img">
+      </ImageView>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:text="create alaram time"
+          android:layout_marginTop="190dp"
+          android:layout_marginStart="25dp"
+          android:textSize="15dp"
+          android:textStyle="bold"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="By Pressing Buttons,Alaram can be created and cancelled"
+          android:layout_marginTop="220dp"
+          android:layout_marginStart="25dp"
+          android:textSize="15dp"
+          android:textStyle="bold"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Check Current Time by looking beloqw real digital clock"
+          android:layout_marginTop="260dp"
+          android:layout_marginStart="25dp"
+          android:textSize="15dp"
+          android:textStyle="bold"/>
+     <TextClock
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+        android:layout_marginTop="290dp"
+        android:layout_marginStart="25dp"
+         android:text="Show Time Here"
+         android:gravity="center" />
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:layout_marginTop="320dp"
+         android:layout_marginStart="30dp"
+          android:drawableLeft="@drawable/ic_baseline_alarm_24"
+          android:gravity="center"
+          android:text="Create Alaram"/>
+
+
+
+
+
+   </com.google.android.material.card.MaterialCardView>
+
+
+      <com.google.android.material.card.MaterialCardView
+          android:id="@+id/card2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="8dp"
+          android:layout_marginTop="40dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:cardElevation="150dp">
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="30dp"
+          android:layout_marginTop="5dp"
+          android:src="@drawable/img1">
+      </ImageView>
+     <TextClock
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginTop="200dp"
+         android:layout_marginStart="25dp"
+         android:text="Set Alaram Time"
+         android:gravity="center"
+         />
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="220dp"
+          android:layout_marginStart="30dp"
+          android:drawableLeft="@drawable/ic_baseline_alarm_off_24"
+          android:gravity="center"
+          android:text="Cancel Alaram"/>
+      </com.google.android.material.card.MaterialCardView>
+   </LinearLayout>
+
+   </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
